@@ -126,25 +126,6 @@ body {
   background: rgba(0, 0, 0, 0.5); /* Dark overlay */
 }
 
-#backToTop {
-  display: none; /* Initially hidden */
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background: #ffffff;
-  color: rgb(0, 0, 0);
-  font-size: 14px;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-  z-index: 1000;
-}
-
-#backToTop:hover {
-  background: #0056b3;
-}
 </style>
 </head>
 <body>
@@ -238,25 +219,6 @@ body {
 <a href="https://api.whatsapp.com/send?phone=+601133721445&text=Hello, saya ingin tahu lebih lanjut." target="_blank" class="whatsapp-button">
   <i class="fa fa-whatsapp"></i>
 </a>
-
-<a href="#" id="backToTop">⬆ Kembali ke Atas</a>
-
-<script>
-window.onscroll = function() {
-    var backToTopButton = document.getElementById("backToTop");
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
-        backToTopButton.style.display = "block";
-    } else {
-        backToTopButton.style.display = "none";
-    }
-};
-
-// Smooth scroll to top
-document.getElementById("backToTop").addEventListener("click", function(e) {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-});
-</script>
 
 </body>
 </html>
