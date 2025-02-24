@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.header {
+  background-color: #002244;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.container {
+  padding: 15px;
+  text-align: center;
+}
+
+.section-lokasi {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  height: 270px;
+  position: relative;
+}
+
+.section {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-button {
+        display: inline-block;
+        background-color: #4f1a1a85; 
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        transition: 0.3s;
+        margin-top: 2%;
+    }
+
+.map-button i {
+    margin-right: 8px;
+}
+
+.map-button:hover {
+    background-color: #29263d85;
+}
+
+.section img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.section video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  z-index: 999;
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 550px; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+#backToTop {
+  display: none; /* Initially hidden */
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+#backToTop:hover {
+  background: #0056b3;
+}
+</style>
+</head>
+<body>
+
+<div class="header">MACHINIST ENGINEERING <br>SDN BHD</div>
+
+<div class="container">
+
+  <div class="video-background" style="margin-bottom: 2%; border-radius: 2%;">
+    <video autoplay loop muted>
+      <source src="vback1.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+    <div class="section-content" style="position: relative; z-index: 1; color: white; padding: 20px; text-align: center;">
+      <h1 style="margin-bottom: 8px;">Tentang Kami</h1>
+      <p>Kami menyediakan perkhidmatan permesinan berkualiti tinggi dan inovatif dengan teknologi terkini. 
+        Kami juga menjual mesin lathe, mesin miling dan mesin grainding second hand dengan harga yang berpatutan.</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Contoh Perkhidmatan</h2>
+    <ul style="text-align: left; margin-left: 20px;">
+      <li>Welding AC/DC Aluminium</li>
+      <li>Milling</li>
+      <li>Lathe</li>
+      <li>Plasma Cutter</li>
+      <li>Arka</li>
+      <li>Membaik pulih barang logam yang rosak</li>
+      <li>Modifikasi enjin kenderaan</li>
+      <li>Skiming disk</li>
+      <li>Skiming head block</li>
+      <li>Repair rim kereta/motosikal</li>
+      <li>Dan lain-lain</li>
+    </ul>
+        
+    <!-- Butang WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=+601133721445&text=Hello, saya berminat untuk mengetahui lebih lanjut." 
+    target="_blank" 
+    class="whatsapp-link"
+    style="display: inline-block; background-color: #25d366; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px;">
+   <i class="fa fa-whatsapp"></i> Hubungi Kami di WhatsApp
+ </a>
+  </div>
+
+
+  <div class="section-lokasi">
+    <h2 style="margin-top: 55px;">Lokasi Kedai</h2>
+    <p>LOT 43(4) Jalan Rambutan Rendang, Kg Chempaka, 16100, Kota Bharu, Kelantan.</p>
+    <a href="https://maps.app.goo.gl/WHF6B4XZZZd5FMhU6?g_st=com.google.maps.preview.copy" target="_blank" class="map-button">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>Google Maps
+    </a> 
+  </div>
+
+  <div class="section">
+    <h2>Galeri</h2>
+    <img src="i1.jpg" alt="Mesin kami" />
+    <img src="i2.jpg" alt="Mesin kami" />
+    <img src="i3.jpg" alt="Mesin kami" />
+    <img src="i4.jpg" alt="Mesin kami" />
+    <img src="i5.jpg" alt="Mesin kami" />
+    <img src="i6.jpg" alt="Mesin kami" />
+  </div>
+
+  <div class="section">
+    <h2>Video</h2>
+    <video controls>
+      <source src="v12.mp4" type="video/mp4">
+    </video>
+    <video controls>
+      <source src="v2.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="v3.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="v4.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="v5.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="v6.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="v7.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="v8.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="v9.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="v10.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="v11.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="v1.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="v13.mp4" type="video/mp4">
+      </video>
+  </div>
+</div>
+
+<a href="https://api.whatsapp.com/send?phone=+601133721445&text=Hello, saya ingin tahu lebih lanjut." target="_blank" class="whatsapp-button">
+  <i class="fa fa-whatsapp"></i>
+</a>
+
+
+</body>
+</html>
