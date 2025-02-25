@@ -26,8 +26,57 @@ body {
 }
 
 .container {
-  padding: 15px;
-  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Improve layout for desktop */
+@media (min-width: 768px) {
+  .section, .section-lokasi {
+    padding: 25px;
+    margin: 20px 0;
+  }
+
+  .header {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  /* Display gallery in grid */
+  .section img {
+    width: 30%;
+    margin: 1%;
+  }
+
+  /* Display videos in grid */
+  .section video {
+    width: 48%;
+    margin: 1%;
+  }
+
+  .video-background {
+    height: 600px;
+  }
+
+  .section-content h1 {
+    font-size: 32px;
+  }
+}
+
+/* For very large screens */
+@media (min-width: 1200px) {
+  .section img {
+    width: 22%;
+  }
+
+  .section video {
+    width: 32%;
+  }
+
+  .video-background {
+    height: 700px;
+  }
 }
 
 .section-lokasi {
@@ -128,7 +177,7 @@ body {
 
 /* Butang Kembali ke Atas */
 #kembaliKeAtas {
-  display: none; /* Sembunyikan pada permulaan */
+  display: none; 
   position: fixed;
   bottom: 20px;
   left: 20px;
@@ -358,7 +407,6 @@ window.onscroll = function() {
     }
 };
 
-// Tatal ke atas dengan lancar
 document.getElementById("kembaliKeAtas").addEventListener("click", function(e) {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
